@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class lab5assignment1 {
+public class lab5assignment0 {
     public static int factorial(int a){
 
         if (a == 0){

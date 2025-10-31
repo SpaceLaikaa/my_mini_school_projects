@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class lab5assignment2 {
+public class lab5assignment1 {
     public static int sumDigits(int n){
         int n2 = 0;
         if (n<0){

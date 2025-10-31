@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class lab5assignment3 {
+public class lab5assignment2 {
     public static long power(long base, int exp){
         if (base == 0 && exp == 0){
             System.out.print("Invalid Input :? ");
