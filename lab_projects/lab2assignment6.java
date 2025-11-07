@@ -12,4 +12,3 @@ public class lab2assignment6 {
         System.out.println("The temperature in Fahrenheit is: " + fahrenheit);
     }
 }
-w
