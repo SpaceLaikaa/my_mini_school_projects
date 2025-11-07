@@ -1,3 +1,5 @@
+package lab_projects;
+
 import java.util.Scanner;
 
 public class lab5assignment2 {
