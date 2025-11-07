@@ -10,7 +10,7 @@ public class lab6assignment1 {
         }
         return newArr;
     }
-    
+
     static void main(String[] args) {
 
 
