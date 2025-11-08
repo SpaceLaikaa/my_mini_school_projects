@@ -1,3 +1,5 @@
+package lab_projects;
+
 public class lab6assignment0 {
     static void main(String[] args) {
         int[] myArr = {4,8 ,15,16,23,42};

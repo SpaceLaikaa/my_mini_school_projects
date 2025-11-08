@@ -1,3 +1,5 @@
+package lab_projects;
+
 import java.util.Random;
 
 public class lab6assignment3 {

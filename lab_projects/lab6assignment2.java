@@ -1,4 +1,5 @@
-import java.sql.SQLSyntaxErrorException;
+package lab_projects;
+
 import java.util.Random;
 import java.util.Arrays;
 
