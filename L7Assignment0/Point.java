@@ -10,4 +10,8 @@ public class Point {
         x = 10;
         y = 12;
     }
+    public Point(int a, int b){
+        x=a;
+        x=b;
+    }
 }

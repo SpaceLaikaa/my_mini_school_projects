@@ -1,4 +1,4 @@
-package lab_projects;
+package lab_projects.lab6;
 
 public class lab6assignment0 {
     static void main(String[] args) {

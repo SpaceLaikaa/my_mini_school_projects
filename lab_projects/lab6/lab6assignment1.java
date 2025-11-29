@@ -1,4 +1,4 @@
-package lab_projects;
+package lab_projects.lab6;
 
 import java.util.Arrays;
 

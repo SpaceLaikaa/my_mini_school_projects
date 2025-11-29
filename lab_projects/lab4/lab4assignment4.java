@@ -1,4 +1,4 @@
-package lab_projects;
+package lab_projects.lab4;
 
 public class lab4assignment4{
 
