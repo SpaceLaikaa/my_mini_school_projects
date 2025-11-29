@@ -1,6 +1,5 @@
-package L7Assignment3;
+package lab_projects.lab7.L7Assignment3;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Book {

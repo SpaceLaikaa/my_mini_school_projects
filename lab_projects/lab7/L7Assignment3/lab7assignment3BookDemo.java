@@ -1,4 +1,4 @@
-package L7Assignment3;
+package lab_projects.lab7.L7Assignment3;
 
 public class lab7assignment3BookDemo {
 
