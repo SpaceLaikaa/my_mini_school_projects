@@ -1,6 +1,4 @@
-package L7Assignment1;
-
-import java.sql.SQLOutput;
+package lab_projects.lab7.L7Assignment1;
 
 public class Student {
     String name;

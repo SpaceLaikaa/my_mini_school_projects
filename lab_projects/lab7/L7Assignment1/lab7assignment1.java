@@ -1,6 +1,4 @@
-package L7Assignment1;
-
-import javax.xml.namespace.QName;
+package lab_projects.lab7.L7Assignment1;
 
 public class lab7assignment1 {
     public void main(String[] args) {

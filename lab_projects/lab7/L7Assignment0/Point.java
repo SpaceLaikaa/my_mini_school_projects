@@ -1,6 +1,4 @@
-package L7Assignment0;
-
-import java.util.Scanner;
+package lab_projects.lab7.L7Assignment0;
 
 public class Point {
     public int x;
