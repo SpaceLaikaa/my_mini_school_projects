@@ -1,4 +1,4 @@
-package L7Assignment2;
+package lab_projects.lab7.L7Assignment2;
 import java.util.Random;
 
 public class BankAccount {
