@@ -1,0 +1,18 @@
+package lab_projects.lab8.L8Assignment1;
+
+public class Task {
+    //part C
+    private String taskName;
+    private int energyCost;
+
+    public Task(String TN, int EC){
+        this.taskName = TN;
+        this.energyCost = EC;
+    }
+
+    public String getTaskName(){return taskName;}
+    public int getEnergyCost(){return energyCost;}
+
+    public void setTaskName(String taskName){this.taskName = taskName;}
+    public void setEnergyCost(int energyCost){this.energyCost = energyCost;}
+}
