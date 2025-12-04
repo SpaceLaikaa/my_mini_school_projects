@@ -3,6 +3,7 @@ package lab_projects.lab8.L8Assignment1;
 import java.util.concurrent.BlockingDeque;
 
 public class Robot {
+
     private String modelName;
     private int batteryLevel;
     private String status;
@@ -31,8 +32,9 @@ public class Robot {
     public void setStatus(String status) {this.status = status;}
 
 
+
     //Part B
-    public boolean isBatteryEnough(int requiredAmount) {
+    public boolean isBatteryEnough(int requiredAmount) { //Used it for Part C
         if (batteryLevel >= requiredAmount) return true;
         else return false;
     }
@@ -45,6 +47,23 @@ public class Robot {
             status = "Active";
             return batteryLevel;
         }
-        else status = "Charging"; return batteryLevel += amount;
+        else status = "Charging";  return batteryLevel += amount;
+    }
+    //Part D
+    public void performTask(Task t){
+        System.out.println("Robot is currently trying to attempt a task: " + t.getTaskName() );
+        if(this.status.equalsIgnoreCase("Charging")){
+            System.out.println("Failure: Robot cannot perform a task while charging...");
+        }
+        else{
+            if (isBatteryEnough(t.getEnergyCost())){
+                consumeBattery(t.getEnergyCost());
+                System.out.println("Success! Task " + t.getTaskName() + " completed.");
+                System.out.println("Remaining Battery: " + this.batteryLevel + "%");
+            }
+            else {
+                System.out.println("Failure: Not enough battery for " + t.getTaskName());
+            }
+        }
     }
 }

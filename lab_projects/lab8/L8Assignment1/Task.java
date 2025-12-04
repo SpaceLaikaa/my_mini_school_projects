@@ -15,4 +15,9 @@ public class Task {
 
     public void setTaskName(String taskName){this.taskName = taskName;}
     public void setEnergyCost(int energyCost){this.energyCost = energyCost;}
+
+    //Part D
+    public void describeTask(){
+        System.out.println("Task: " + taskName + " Energy Cost: " + energyCost);
+    }
 }
