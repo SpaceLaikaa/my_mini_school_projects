@@ -11,7 +11,7 @@ public class TaskBatch {
     private int taskCount;
 
 
-    public TaskBatch(Task[] tasks, int taskCount){
+    public TaskBatch(){
         this.tasks = new Task[5];
         this.taskCount = 0;
     }
@@ -57,7 +57,10 @@ public class TaskBatch {
         }
 
         for (int i =0;i<taskCount;i++){
-            System.out.println("Task name & energy cost: " + getTasks());
+            System.out.println("");//For Spacing
+            System.out.println("====Robot"+ (i+1) + "====");
+            System.out.println("Task names & energy costs: \n" + getTasks());
         }
     }
 }
+

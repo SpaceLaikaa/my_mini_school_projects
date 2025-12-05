@@ -20,4 +20,6 @@ public class Task {
     public void describeTask(){
         System.out.println("Task: " + taskName + " Energy Cost: " + energyCost);
     }
+
+
 }

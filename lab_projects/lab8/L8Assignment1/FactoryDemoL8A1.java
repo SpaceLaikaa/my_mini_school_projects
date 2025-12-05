@@ -6,21 +6,32 @@ public class FactoryDemoL8A1 {
     public void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        //Part E
+        TaskBatch Batch1 = new TaskBatch();
+
         //Part C
         Task Task1 = new Task("Clean",25);
         Task Task2 = new Task("Wash", 35);
-        //Added for Part D
-        Task task3 = new Task("Walk",10);
+        //Added for Part E
+        Task Task3 = new Task("Walk",10);
+
+        Batch1.addTask(Task1);
+        Batch1.addTask(Task2);
+        Batch1.addTask(Task3);
 
         //Part A
         Robot Robo1 = new Robot("Nagasaki-15", 100,"Active");
         Robot Robo2 = new Robot("Osaka-38", 100,"Active");
+        Robot Robo3 = new Robot("Tokyo-48", 100,"Active");
 
         System.out.println("=====Robot 1=====");
         Robo1.displayRobotInfo();
         System.out.println("");
         System.out.println("=====Robot 2=====");
         Robo2.displayRobotInfo();
+        System.out.println("");
+        System.out.println("=====Robot 3=====");
+        Robo3.displayRobotInfo();
 
         //Part B
         System.out.println("\nHow much battery do you want to consume on Robot 1? ");
@@ -50,10 +61,14 @@ public class FactoryDemoL8A1 {
 
         System.out.println("---------------------------");
         System.out.println("[AFTER TASK] Robot Status:");
+
         Robo1.displayRobotInfo();
 
-        
+        //Part E
 
+        Batch1.printBatchInfo();
+        System.out.println("Total energy cost: " + Batch1.getTotalEnergyCost());
+        
     }
     }
 
