@@ -9,6 +9,8 @@ public class FactoryDemoL8A1 {
         //Part C
         Task Task1 = new Task("Clean",25);
         Task Task2 = new Task("Wash", 35);
+        //Added for Part D
+        Task task3 = new Task("Walk",10);
 
         //Part A
         Robot Robo1 = new Robot("Nagasaki-15", 100,"Active");
@@ -52,12 +54,7 @@ public class FactoryDemoL8A1 {
 
         
 
-
-
     }
-
-
-
     }
 
 
