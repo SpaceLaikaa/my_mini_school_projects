@@ -16,6 +16,7 @@ public class TaskBatch {
         this.taskCount = 0;
     }
 
+
     public void addTask(Task t){
         if(taskCount<5){
             tasks[taskCount] = t;
@@ -24,6 +25,8 @@ public class TaskBatch {
         }
         else System.out.println("ERROR, cannot add more than 5 tasks.");
     }
+
+    public int getTaskCount(){return taskCount;}
 
     public int getTotalEnergyCost(){
         if(taskCount ==0){
@@ -37,19 +40,14 @@ public class TaskBatch {
         return totalEnergyCost;
     }
 
-    public String getTasks() {
-        String allTasks = "";
-        if(taskCount ==0){
+    public Task[] getTasks() {
+        if (taskCount == 0) {
             System.out.println("ERROR, no task detected!");
+            return new Task[0]; // return empty array if no tasks
         }
-        else {
-            for (int i = 0; i<taskCount;i++){
-                allTasks += tasks[i].getTaskName() + "(Energy: "
-                         + tasks[i].getEnergyCost() + ")\n"; // I indeed got help in this part
-            }
-        }
-        return allTasks;
+        return tasks; // return the array of tasks
     }
+
 
     public void printBatchInfo(){
         if(taskCount==0){

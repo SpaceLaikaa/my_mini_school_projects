@@ -3,6 +3,7 @@ package lab_projects.lab8.L8Assignment1;
 import java.util.concurrent.BlockingDeque;
 
 public class Robot {
+    TaskBatch TB = new TaskBatch();
 
     private String modelName;
     private int batteryLevel;
@@ -66,4 +67,29 @@ public class Robot {
             }
         }
     }
+    //         ===Bonus Part===
+    public void performTaskBatch(TaskBatch batch) {
+        if (batch.getTotalEnergyCost() == 0) {
+            System.out.println("ERROR, no task detected!");
+            return;
+        }
+
+        int totalCost = batch.getTotalEnergyCost();
+        if (!isBatteryEnough(totalCost)) {
+            System.out.println("Failure: Not enough battery for the whole batch!");
+            return;
+        }
+
+        System.out.println("The Robot is processing the batch...");
+
+        Task[] tasks = batch.getTasks(); // now returns Task[]
+        for (int i = 0; i < TB.getTaskCount(); i++) {
+            performTask(tasks[i]); // process each task individually
+        }
+
+        displayRobotInfo(); // show updated info after batch
+    }
+
+
 }
+

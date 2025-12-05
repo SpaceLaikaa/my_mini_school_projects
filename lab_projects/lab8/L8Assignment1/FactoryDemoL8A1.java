@@ -9,6 +9,7 @@ public class FactoryDemoL8A1 {
         //Part E
         TaskBatch Batch1 = new TaskBatch();
 
+
         //Part C
         Task Task1 = new Task("Clean",25);
         Task Task2 = new Task("Wash", 35);
@@ -68,7 +69,8 @@ public class FactoryDemoL8A1 {
 
         Batch1.printBatchInfo();
         System.out.println("Total energy cost: " + Batch1.getTotalEnergyCost());
-        
+        //Bonus Part
+        Robo1.performTaskBatch(Batch1);
     }
     }
 
